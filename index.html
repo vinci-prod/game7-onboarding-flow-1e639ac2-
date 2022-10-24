@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <script> 
     window.addEventListener('load', async () => {
-        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord"];
+        const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord", "but", "complete"];
         var allElements = document.querySelectorAll('*[id]');
         for (var i = 0, n = allElements.length; i < n; ++i) {
         var el = allElements[i];
@@ -19,7 +19,6 @@
         }
         }
         init(); 
-            init();
         if(document.querySelector("#eth") !== null){
             document.querySelector("#eth").addEventListener("click", onConnect);
         }
@@ -34,6 +33,9 @@
         }
         if(document.querySelector("#twitter") !== null){
             document.querySelector("#twitter").addEventListener("click", openPopupT);
+        }
+        if(document.querySelector("#complete") !== null){
+            addxptopath();
         }
         
     });
